@@ -1,3 +1,5 @@
+# Говорим что наш терминал умеет 256 цветов, если не поставить то некторые плагины рисуют все белым цветом, например zsh-autosuggestions
+export TERM=xterm-256color
 ####################################################################################################
 # Запускаем antigen
 ####################################################################################################
@@ -21,7 +23,6 @@ antigen bundle sublime
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
-
 
 # Load the theme.
 antigen theme robbyrussell
