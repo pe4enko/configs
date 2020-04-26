@@ -10,8 +10,10 @@ alias -g skip="-Dmaven.test.skip=true -DskipTests"
 alias mi="mvn install -Dmaven.test.skip=true -DskipTests"
 alias mci="mvn clean install -Dmaven.test.skip=true -DskipTests"
 alias mit="mvn install"
+alias mitc="mvn install -DskipTests"
 alias mmi="mi -T 1.5C"
 alias mmit="mit -T 1.5C"
+alias mmitc="mitc -T 1.5C $@"
 
 alias mp="mvn package -Dmaven.test.skip=true -DskipTests"
 alias mcp="mvn clean package -Dmaven.test.skip=true -DskipTests"
@@ -32,4 +34,4 @@ alias k="kill -9 %%"
 export MAVEN_OPTS="-Xms256m -Xmx2g -XX:MaxPermSize=256m"
 #export PATH=$M2:$PATH
 
-export IDEA_JDK=/usr/lib/jvm/jdk1.8.0_66
+#export IDEA_JDK=/usr/lib/jvm/idea-jdk
